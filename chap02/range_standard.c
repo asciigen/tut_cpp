@@ -1,3 +1,7 @@
+/*	This program outputs range of
+	integral types and float types	*/
+
+//	Include necessary header files
 #include <stdio.h>
 #include <limits.h>
 #include <float.h>

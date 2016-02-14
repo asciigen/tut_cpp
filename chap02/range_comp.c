@@ -1,12 +1,13 @@
-/* This program is a demonstration of
-sizeof operator and outputs the
-range of variable data types */
+/*	This program is a demonstration of
+	sizeof operator and outputs the
+	range of variable data types 	*/
 
+//	Include necessary header files
 #include <stdio.h>
 #include <math.h>
 main()
 {
-// Range of program starts working here
+//	Range of program starts working here
 
 printf("Range of signed char variable is  \t\t%35.0f to %35.0f \n",((-(pow(2,sizeof(signed char)*8))/2)),(((pow(2,sizeof(signed char)*8))/2))-1);
 printf("Range of unsigned char variable is \t\t%35.0f to %35.0f \n",0.0,(pow(2,sizeof(unsigned char)*8))-1);

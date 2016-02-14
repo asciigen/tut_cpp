@@ -1,5 +1,11 @@
+/*	This is a demo of octal and hexadecimal numbers	*/
+
+//	define constants
 # define MAXLEN	1000
+
+//	Octal value
 # define OCTN '\37'
+//	Hexadecimal value
 # define HEXN '\x1F'
 
 # include <stdio.h>
