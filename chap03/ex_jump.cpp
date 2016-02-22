@@ -1,23 +1,24 @@
 using namespace std;
 #include<iostream>
+#include<stdlib.h>
 
 int main()
 {
-	void exit(int exitcode);
 	int i = 0, n = 10;
 	while(i < n)
 	{
 		i++;
 		if(i == 7)
 			break;
+		cout <<"While iteration with break " << i <<" \n";
 	}
-	exit(5);
 	i = 0;
 	while(i < n)
 	{
 		i++;
 		if( i == 7)
 			continue;
+		cout <<"While iteration with continue "<< i << " \n";
 	}
 
 	i = 0;
@@ -26,5 +27,5 @@ int main()
 	i++;
 	if(i < n)
 	goto loop;
-
+	exit(EXIT_FAILURE);
 }
