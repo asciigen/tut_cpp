@@ -1,44 +1,58 @@
 #include<iostream>
 using namespace std;
 // passes a pointer (called reference in java) to an integer
-void swap1(int *p, int *q) { // :1
+void swap1(int *p, int *q)
+{
 	int t;
 	t = *p;
 	*p = *q;
 	*q = t;
+	cout << "Swap1 function called -\t";
+	cout << *p << "\t";
+	cout << *q << "\n";
 }
-// passes an integer
+//	Swap 2
 void swap2(int p,int q)
-{ // :2
+{
 	int t;
 	t = p;
 	p = q;
 	q = t;
+	cout << "Swap2 function called -\t";
+	cout << p << "\t";
+	cout << q << "\n";
 }
-// passes an integer by reference
+//	passes an integer by reference
 void swap3(int* p, int* q)
-{ // :3
+{
+//	Adress swapping
 	int* t;
 	t = p;
 	p = q;
 	q = t;
+	cout << "Swap3 function called -\t";
+	cout << *p << "\t";
+	cout << *q << "\n";
 }
-// this is the java style of passing references. NULL is called "null" there.
+//	this is the java style of passing references. NULL is called "null" there.
 void swap4(int *p, int *q)
-{ // :4
+{
 	int t;
-//	changes what p points to ("what p references" in java)
-//	only changes the value of the parameter, but *not* of
-//	the argument passed by the caller. thus it's pass-by-value:
-    	t = *p;
+	t = *p;
 	*p = *q;
 	*q = t;
+	cout << "Swap4 function called -\t";
+	cout << *p << "\t";
+	cout << *q << "\n";
 }
 void swap5(int** p, int** q)
 {
-    int* t = *p;
-    *p = *q;
-    *q = t;
+	int* t = *p;
+	*p = *q;
+	*q = t;
+	cout << "Swap5 function called -\t";
+	cout << **p << "\t";
+	cout << **q << "\n";
     // they're swapped!
 }
 int main()
